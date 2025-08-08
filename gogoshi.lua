@@ -3,7 +3,7 @@ local RunService = game:GetService("RunService")
 
 local function DownloadPenisModel()
     if not isfile("Purity.rbxm") then
-        local content = "https://github.com/REFLOXERING/refloshering/raw/refs/heads/main/persistence.rbxm"
+        local content = "https://github.com/REFLOXERING/refloshering/raw/refs/heads/main/Purity.rbxm"
         writefile("Purity.rbxm", content)
     end
     return getcustomasset("Purity.rbxm")
@@ -302,4 +302,5 @@ if game.Players.LocalPlayer.Character then
     local char = game.Players.LocalPlayer.Character
     char:WaitForChild("Humanoid").Died:Connect(onCharacterDied)
     onCharacterAdded(char)
+
 end
